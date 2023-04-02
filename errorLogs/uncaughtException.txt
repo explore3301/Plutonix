@@ -1,0 +1,9 @@
+
+Caught exception: TypeError: client.displayAvatarURL is not a function
+Exception origin: uncaughtException
+Caught exception: Error: listen EADDRINUSE: address already in use :::5000
+Exception origin: uncaughtException
+Caught exception: Error: listen EADDRINUSE: address already in use :::5000
+Exception origin: uncaughtException
+Caught exception: Error: listen EADDRINUSE: address already in use :::5000
+Exception origin: uncaughtException

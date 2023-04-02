@@ -1,0 +1,10 @@
+//server / web-window ro receive and respond to http requests
+const express = require("express")
+const app = express();
+
+const server = app.listen(5000, () => {})
+
+//the text to be sent as result / display in web window
+app.get("/", (req, res) => res.send(
+  `Nut..xdd`
+  ))

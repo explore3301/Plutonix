@@ -1,0 +1,223 @@
+
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1064110670985056266/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1064110670985056266/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1064110670985056266/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1064110670985056266/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1071285423525085256/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1071285423525085256/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1077484428839882814/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1077970075698598038/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/gateway/bot failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078281236327448708 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078281236327448708 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078281370897498122 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078281370897498122 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078282239630127104 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078282239630127104 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078282695362232402 failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1070734636319244448/messages/1078282695362232402 failed, reason: socket hang up
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1069475093996109914/messages failed, reason: socket hang up
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1069475093996109914/messages failed, reason: socket hang up
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: reject
+Promise: [object Promise]
+Reason: Error: Cannot perform IP discovery - socket closed
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: resolve
+Promise: [object Promise]
+Reason: undefined
+type: reject
+Promise: [object Promise]
+Reason: FetchError: request to https://discord.com/api/v9/channels/1067432396884025475/messages failed, reason: socket hang up

@@ -1,0 +1,124 @@
+const {
+  MessageEmbed,
+  MessageActionRow,
+  MessageSelectMenu,
+} = require("discord.js")
+
+const { o, x, point, arrow, s } = require("../../../settings/emojis.json")
+
+module.exports = {
+  name: "help",
+  aliases: ["h", "cmds", "commands"],
+  edesc: "help",
+  description: `need help ? see my all commands`,
+  userPermissions: [],
+  botPermissions: [],
+  category: "Information",
+  cooldown: 5,
+  docs: "",
+
+
+  run: async (client, message, args, prefix) => {
+    // Code
+ 
+
+    const emoji = {
+      Developer: `<:nutt_deve:1073435252602712115>`,
+      Utility: `<:nutt_wlc:1073184467419676682>`,
+  Fun: `<:nutt_fun:1078253487428747406>`,
+Games: `<:nutt_games:1073184664107364466>`,
+      Customrole: `<:nutt_sets:1073184535698747452>`,
+      Setup: `<:nutt_setup:1078253738751438928>`,
+   Moderation: `<:nut_antinuke:1073183113175367742>`
+
+    };
+
+    color = client.main
+
+    const desc = {
+      Developer: "View commands that are DEV exclusive",
+      Information: "View commands to get info about bot"
+    };
+
+
+
+    let raw = new MessageActionRow()
+      .addComponents([
+        new MessageSelectMenu()
+          .setCustomId("help-menu")
+          .setPlaceholder(`Click Me  `)
+          .addOptions([
+            {
+              label: `Home`,
+              value: "home",
+              emoji: `1077913914030948392`,
+           //   description: `Click to go to Homepage`,
+            },
+            client.mcategories.map((cat) => {
+              return {
+                label: `${cat}`,
+                value: cat,
+                emoji: emoji[cat],
+              //  description: desc[cat],
+              };
+            }),
+          ]),
+      ]);
+
+    let help_embed = new MessageEmbed()
+      .setColor(color)
+     .setThumbnail(message.guild.iconURL({dynamic: true}))
+      .setTitle(client.user.username)
+      .setDescription(`**__Help Command Overview __**
+      
+<:nutt_dott:1073440651145904150> **Prefix for this server is** \`.\`
+<:nutt_dott:1073440651145904150> **Total Commands:** 
+<:nutt_dott:1073440651145904150> **[Invite NuT](https://discord.com/oauth2/authorize?client_id=1047714595705458758&scope=bot+applications.commands&permissions=268823646) | [Support Server](https://discord.gg/nutbot) | [Vote me](https://top.gg/bot/1047714595705458758/vote)**`)
+    .addField(`${s}__Command Modules__`, `${s}**<:nutt_sets:1073184535698747452> Custom roles\n${s}<:nutt_games:1073184664107364466> Games\n${s}<:nutt_fun:1078253487428747406> Fun\n${s}<:nut_antinuke:1073183113175367742> Moderation\n${s}<:nutt_setup:1078253738751438928> Setup\n${s}<:nutt_wlc:1073184467419676682> Utility**`)
+    .setFooter("Thanks For Using NuT", client.user.displayAvatarURL())
+
+    let main_msg = await message.reply({
+      embeds: [help_embed],
+      components: [raw],
+    });
+
+    let filter = (i) => i.user.id === message.author.id;
+    let colector = await main_msg.createMessageComponentCollector({
+      filter: filter,
+      time: 999999,
+    });
+    colector.on("collect", async (i) => {
+      if (i.isSelectMenu()) {
+        await i.deferUpdate().catch((e) => { })
+        if (i.customId === "help-menu") {
+          let [directory] = i.values;
+          if (directory == "home") {
+            main_msg.edit({ embeds: [help_embed] }).catch((e) => { });
+          } else {
+            main_msg
+              .edit({
+                embeds: [
+                  new MessageEmbed()
+                    .setColor(color)
+                    .setAuthor({ name: `${message.author.tag}`, iconURL: message.author.displayAvatarURL({dynamic: true})})
+                  .setTitle(`__${directory}__`)
+                    .setDescription(`• ${client.mcommands
+                        .filter((cmd) => cmd.category === directory)
+                        .map((cmd) => {
+                          return `\`${cmd.name}\``;
+                        })
+                        .join(", ")}`)
+                ],
+              })
+              .catch((e) => null);
+          }
+        }
+      }
+    });
+
+    colector.on("end", async (c, i) => {
+      raw.components.forEach((c) => c.setDisabled(true));
+      main_msg.edit({ components: [] }).catch((e) => { })
+    })
+  }
+}
